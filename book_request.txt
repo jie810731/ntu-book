@@ -1,0 +1,55 @@
+https://ntupesc.ntu.edu.tw/facilities/PlaceOrderFrm.aspx?buildingSeq=MAA1&placeSeq=MgA1&dateLst=2022%2f4%2f28&sTime=OAA1&eTime=OQA1&section=MQA1&date=MgAwADIAMgAvADAANAAvADIANwA1&week=MwA1
+
+POST /facilities/PlaceOrderFrm.aspx?buildingSeq=MAA1&placeSeq=MgA1&dateLst=2022%2f4%2f28&sTime=OAA1&eTime=OQA1&section=MQA1&date=MgAwADIAMgAvADAANAAvADIANwA1&week=MwA1 HTTP/1.1
+Host: ntupesc.ntu.edu.tw
+Connection: keep-alive
+Content-Length: 3289
+Pragma: no-cache
+Cache-Control: no-cache
+sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="99", "Google Chrome";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Upgrade-Insecure-Requests: 1
+Origin: https://ntupesc.ntu.edu.tw
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Referer: https://ntupesc.ntu.edu.tw/facilities/PlaceOrderFrm.aspx?buildingSeq=MAA1&placeSeq=MgA1&dateLst=2022/4/28&sTime=OAA1&eTime=OQA1&section=MQA1&date=MgAwADIAMgAvADAANAAvADIANwA1&week=MwA1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-TW,zh;q=0.9
+Cookie: ASP.NET_SessionId=1vntgc55hrlb14umqzni1s45; TS01ad78e8=01a65c6e8a4efd2e2d6119c73027d68d750eebb9c8c9c20d64b09187d92653d24751dbf8b578937d024a5b96656cb358575b5725952e9844c10aa2e352d17a3cb6958198d6
+
+
+
+
+
+__EVENTTARGET: 
+__EVENTARGUMENT: 
+__LASTFOCUS: 
+__VIEWSTATE: /wEPDwULLTE3MjU2OTQwOTIPZBYCZg9kFgICAw9kFggCAw8PFgIeBFRleHQFGeS7iuaXpeaXpeacn++8mjIwMjIvMDQvMjFkZAIFDw8WAh8ABXDkvb/nlKjogIXvvJrllJDln7nmjbcoQTEyOTEyMTc2Nyk8QlI+6Lqr5Lu95Yil77ya5qCh5aSWPEJSPuW3sueZu+WFpTxCUj48QlI+5q2h6L+O5L2/55So57ea5LiK5aC05Zyw6aCQ57SE57O757WxZGQCCw8WAh8ABUI8c3BhbiBjbGFzcz0nc3BhbkZyb250Jz7nhKHku7vkvZXmnIDmlrDmtojmga88L3NwYW4+PC9wPjwvbWFycXVlZT5kAg0PZBYCAgEPZBYUAggPDxYCHwAFBzExOTc0NzVkZAIKDw8WAh8ABS3ntpzlkIjpq5TogrLppKjkuIDmqJMtMUbnvr3nkIPloLQgICAgICAgICAgICBkZAIMDw8WAh8ABQnllJDln7nmjbdkZAIaDw8WAh8ABQbmoKHlpJZkZAIcDxBkDxYDZgIBAgIWAxAFBuePvumHkQUG54++6YeRZxAFDOe3muS4iuS7mOasvgUM57ea5LiK5LuY5qy+ZxAFCeaZguaVuOWIuAUG5pmC5pW4Z2RkAiAPDxYCHwAFCjIwMjIvMDQvMjdkZAIiDxBkDxYPZgIBAgICAwIEAgUCBgIHAggCCQIKAgsCDAINAg4WDxAFBDg6MDAFAThnEAUEOTowMAUBOWcQBQUxMDowMAUCMTBnEAUFMTE6MDAFAjExZxAFBTEyOjAwBQIxMmcQBQUxMzowMAUCMTNnEAUFMTQ6MDAFAjE0ZxAFBTE1OjAwBQIxNWcQBQUxNjowMAUCMTZnEAUFMTc6MDAFAjE3ZxAFBTE4OjAwBQIxOGcQBQUxOTowMAUCMTlnEAUFMjA6MDAFAjIwZxAFBTIxOjAwBQIyMWcQBQUyMjowMAUCMjJnZGQCJA8QZA8WDmYCAQICAgMCBAIFAgYCBwIIAgkCCgILAgwCDRYOEAUEOTowMAUBOWcQBQUxMDowMAUCMTBnEAUFMTE6MDAFAjExZxAFBTEyOjAwBQIxMmcQBQUxMzowMAUCMTNnEAUFMTQ6MDAFAjE0ZxAFBTE1OjAwBQIxNWcQBQUxNjowMAUCMTZnEAUFMTc6MDAFAjE3ZxAFBTE4OjAwBQIxOGcQBQUxOTowMAUCMTlnEAUFMjA6MDAFAjIwZxAFBTIxOjAwBQIyMWcQBQUyMjowMAUCMjJnZGQCKg8PFgIfAAUqPEJSPiROVDUwMC/loLTmrKEo6Zui5bOw5pmC5q61ODowMOiHszk6MDApZGQCLQ8PFgQeCEltYWdlVXJsBR1WYWxpZGF0ZUNvZGUuYXNweD9JbWdJRD1Mb2dpbh4HVG9vbFRpcAUk6bue5pOK5ZyW54mH5Y+v6YeN5paw55Si55Sf6amX6K2J56K8FgIeB29uY2xpY2sFP3RoaXMuc3JjPSdWYWxpZGF0ZUNvZGUuYXNweD9JbWdJRD1Mb2dpbiZmbGFnPScgKyBNYXRoLnJhbmRvbSgpO2Rk1l8Bhuz+Qk7GeOzfLLTzYbcaz7Q=
+__EVENTVALIDATION: /wEWNwKdhf3ABgKenYa6CgKmgrS6BwKVmaKuDQLe9cW6DwLUnp3xAQKEhLO8BALO+dvdBwKIv9+QCQKljKvkAQKpxZmADQKxqrPuAQK+qrPuAQKmqvPtAQKmqv/tAQKmqvvtAQKmqsftAQKmqsPtAQKmqs/tAQKmqsvtAQKmqtftAQKmqpPuAQKmqp/uAQKnqvPtAQKnqv/tAQKnqvvtAQK21/qxAwKhuNDfDwK5uJDcDwK5uJzcDwK5uJjcDwK5uKTcDwK5uKDcDwK5uKzcDwK5uKjcDwK5uLTcDwK5uPDfDwK5uPzfDwK4uJDcDwK4uJzcDwK4uJjcDwKSuJrlCwLJ0IqCDAKT5+K1CAKG1qD0CQLj5c6uCgKEjN68DwKG7uXsBwLK/oeMDgKn6vbGBgKw7sSTBwL50tb0CQL50v6CCgLqqKuOCQKcjYHXDamo3B2rmrliN5byOwrAPb8/QjIo
+ctl00$ContentPlaceHolder1$txtContactName: 唐培捷
+ctl00$ContentPlaceHolder1$txtContactTel: 0933501970
+ctl00$ContentPlaceHolder1$txtFax: 
+ctl00$ContentPlaceHolder1$txtEmail: jie810731@gmail.com
+ctl00$ContentPlaceHolder1$DropLstPayMethod: 現金
+ctl00$ContentPlaceHolder1$txtpayHourNum: 
+ctl00$ContentPlaceHolder1$DropLstTimeStart: 8
+ctl00$ContentPlaceHolder1$DropLstTimeEnd: 9
+ctl00$ContentPlaceHolder1$txtPlaceNum: 1
+ctl00$ContentPlaceHolder1$txtValidateCode: K5TF
+ctl00$ContentPlaceHolder1$btnOrder: 送出預約
+ctl00$ContentPlaceHolder1$hidbookDate: 2022/04/27
+ctl00$ContentPlaceHolder1$hidmemberId: A129121767
+ctl00$ContentPlaceHolder1$hidplaceSeq: 2
+ctl00$ContentPlaceHolder1$hidpayPrice: 500
+ctl00$ContentPlaceHolder1$hidpeekCharge: 0
+ctl00$ContentPlaceHolder1$hidoffCharge: 500
+ctl00$ContentPlaceHolder1$hidsTime: 8
+ctl00$ContentPlaceHolder1$hideTime: 9
+ctl00$ContentPlaceHolder1$hidWeek: 3
+ctl00$ContentPlaceHolder1$hiddateLst: 2022/4/28

@@ -1,0 +1,31 @@
+8 => OAA1
+9 => OQA1
+10 =>MQAwAA2
+11 =>MQAxAA2    
+12 =>MQAyAA2
+13 =>MQAzAA2
+14 =>MQA0AA2
+15 =>MQA1AA2
+16 =>MQA2AA2
+17 =>MQA3AA2
+18 =>MQA4AA2
+19 =>MQA5AA2
+20 =>MgAwAA2
+21 =>MgAxAA2
+22 =>MgAyAA2
+
+placeSeq
+羽1f => MgA1
+壁球 => NAA1
+桌109 =>   NQA1
+桌B1 => MwA1
+
+
+week
+一 =>
+二
+三 => MwA1
+四 => NAA1
+五 => NQA1
+六 => NgA1
+日 =>
