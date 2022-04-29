@@ -7,7 +7,7 @@ docker build -t ntu .
 ## how to run
 
 ```
-docker run -i -t
+docker run -i -t \
     -v "$PWD":/app \
     -e ACCOUNT='' \
     -e PASSWORD='' \
