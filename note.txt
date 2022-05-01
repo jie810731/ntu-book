@@ -16,14 +16,15 @@
 
 placeSeq
 羽1f => MgA1
+羽3f => MQA1
 壁球 => NAA1
 桌109 =>   NQA1
 桌B1 => MwA1
 
 
 week
-一 =>
-二
+一 => MQA1
+二 => MgA1
 三 => MwA1
 四 => NAA1
 五 => NQA1

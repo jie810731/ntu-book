@@ -83,22 +83,30 @@ def getLoginCatchImageCode(captch_request = None):
 
     return res
 
-def getCanLogintime(book_date):
+def getCanLogintime(book_date,week_day_index):
+    can_login_hour = 7
+    if week_day_index == 6 or week_day_index == 7:
+        can_login_hour = 8
+    
     book_date_in_date_time = datetime.strptime(book_date, "%Y-%m-%d")
     
     start_book_date = book_date_in_date_time - timedelta(days=7)
-    start_book_time = start_book_date.replace(hour=7,minute=59,second=30)
+    start_book_time = start_book_date.replace(hour=can_login_hour,minute=59,second=30)
     tw_zone = pytz.timezone('Asia/Taipei')
 
     tw_start_login_time = tw_zone.localize(start_book_time)
 
     return tw_start_login_time
 
-def getCanBooktime(book_date):
+def getCanBooktime(book_date,week_day_index):
+    can_book_hour = 8
+    if week_day_index == 6 or week_day_index == 7:
+        can_book_hour = 9
+    
     book_date_in_date_time = datetime.strptime(book_date, "%Y-%m-%d")
     
     start_book_date = book_date_in_date_time - timedelta(days=7)
-    start_book_time = start_book_date.replace(hour=8,minute=00,second=00)
+    start_book_time = start_book_date.replace(hour=can_book_hour,minute=00,second=00)
     tw_zone = pytz.timezone('Asia/Taipei')
 
     tw_start_book_time = tw_zone.localize(start_book_time)
@@ -171,7 +179,7 @@ def getWeekDayCode(week_day_index):
         4 : 'NAA1',
         5 : 'NQA1',
         6 : 'NgA1',
-        7 : '??'
+        7 : 'NwA1'
     }
 
     return mapping[week_day_index]
@@ -189,13 +197,16 @@ if __name__ == '__main__':
     start_time  = os.environ['START_BOOK_TIME']
     end_time  = os.environ['END_BOOK_TIME']
     place_number = os.environ.get('PLACE_NUMBER')
-
-    can_login_time = getCanLogintime(book_date)
-    can_book_time = getCanBooktime(book_date)
+    place_seq = os.environ.get('PLACE_SEQ')
 
     week_day_index = getWeekDayIndex(book_date)
     week_day_code = getWeekDayCode(week_day_index)
     date_code = dateEncode(book_date)
+
+    can_login_time = getCanLogintime(book_date,week_day_index)
+    can_book_time = getCanBooktime(book_date,week_day_index)
+
+    court_code = 'MgA1'
 
     try:
         web_driver = web_driver_init()
@@ -206,22 +217,25 @@ if __name__ == '__main__':
 
         if not place_number:
             place_number = 1
+        
+        if str(place_seq) == '3':
+            court_code = 'MQA1'
+            
             
         parameter = {
             'date_code':date_code,
-            'court_code':'MgA1',
+            'court_code':court_code,
             'start_time_code':getTimeEnCode(start_time),
             'end_time_code':getTimeEnCode(end_time),
             'place_number':place_number,
-            'week_day_code':week_day_code
+            'week_day_code':week_day_code,
         }
 
         readyBookPage(web_driver,parameter)
-
         pause.until(can_book_time)
 
-        print('start book time = {}'.format(datetime.now(pytz.timezone('Asia/Taipei'))))
         while True:
+            print('start book time = {}'.format(datetime.now(pytz.timezone('Asia/Taipei'))))
             book(web_driver)
             try:
                 WebDriverWait(web_driver, 10).until(expected_conditions.alert_is_present())

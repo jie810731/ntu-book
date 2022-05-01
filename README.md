@@ -15,5 +15,6 @@ docker run -i -t \
     -e START_BOOK_TIME='HH' \
     -e END_BOOK_TIME='HH' \
     -e PLACE_NUMBER=1 \
+    -e PLACE_SEQ='1' \
    --name ntu_container ntu
 ```
