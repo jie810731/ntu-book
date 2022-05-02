@@ -250,6 +250,11 @@ if __name__ == '__main__':
                     insertCaptcha(web_driver)
                     
                     continue
+
+                if text.find('點開放時間預約') > 0:
+                    insertCaptcha(web_driver)
+                    
+                    continue
                 # print(text.find('預約的場地數，已超過時段'))
                 
                 break
